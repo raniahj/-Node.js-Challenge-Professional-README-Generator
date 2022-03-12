@@ -1,0 +1,27 @@
+{
+  "name": "static-site",
+  "version": "1.0.0",
+  "description": "Professional README.md Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raniah Jeanlys",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^6.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raniahj/Node.js-Challenge-Professional-README-Generator.git"
+  },
+  "keywords": [
+    "professional",
+    "readme",
+    "generator"
+  ],
+  "bugs": {
+    "url": "https://github.com/raniahj/Node.js-Challenge-Professional-README-Generator/issues"
+  },
+  "homepage": "https://github.com/raniahj/Node.js-Challenge-Professional-README-Generator#readme"
+}
