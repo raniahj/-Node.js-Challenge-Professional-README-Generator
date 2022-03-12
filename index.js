@@ -29,7 +29,7 @@ const questions = [
     },
     {
       type: "input",
-      message: "Enter any necessary dependencies for this app",
+      message: "Please enter any required packages for this app",
       name: "Installation",
     },
     {
@@ -44,7 +44,7 @@ const questions = [
     },
     {
       type: "input",
-      message: "What command do you use to test this App?",
+      message: "Please enter test information for this app?",
       name: "Test",
     }
   ];
@@ -52,19 +52,17 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, generateMarkdown(data), (err) => {
-    if (err) console.log(err);
-    else {
-      console.log("File written successfully");
-    }
+    if (err) { throw err };
+      console.log("The file was written successfully")
   });
 }
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-      .then((answers) => {
-      writeToFile("generatedMd.md", answers);
-      console.log(answers);
+      .then((data) => {
+      writeToFile("generatedMd.md", data);
+      console.log(data);
     });
   }
   
